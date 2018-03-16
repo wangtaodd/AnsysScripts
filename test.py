@@ -5,7 +5,7 @@ oDesktop = oAnsoftApp.GetAppDesktop()
 oProject = oDesktop.NewProject()
 oDesign = oProject.InsertDesign("Maxwell 3D", "ScriptTest", "Magnetostatic", "")
 oEditor = oDesign.SetActiveEditor("3D Modeler")
-
+# TODO : 由于外部直接调用py文件时，会出现dict类型不能作为参数，因此使用命令行调用runscript命令执行py文件
 # create the first cone
 firstConeName = "firstCone"
 coneBotRad = "1.5mm"
